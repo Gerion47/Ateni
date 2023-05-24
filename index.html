@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <title>Atenifood | Kelompok 4</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand ms-4" href="#">
+        <img src="img/logo.png" alt="logo_Atenifood" width="100" height="50">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item px-3 py-2">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item px-3 py-2">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item px-3 py-2">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item px-3 py-2">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item px-3 py-2">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-start px-2 m-auto">
+          <div class="search"> <input type="text" class="search-input" name=""> <a href="#" class="search-icon"> <i
+                data-feather="search"></i></a> </div>
+        </div>
+        <div class="cartlog d-flex justify-content-center py-3">
+          <div class="login dropdown">
+            <span class="login-icon"><i data-feather="user"></i></span>
+            <button class="btn dropdown-toggle" type="button" role="dropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">Login
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fs-5 fw-light" href="#">Sign in</a></li>
+              <li><a class="dropdown-item fs-5 fw-light" href="#">Register</a></li>
+            </ul>
+          </div>
+          <span class="cart ps-3 py-2"><a href=""><i class="cart-icon" data-feather="shopping-cart"></i></a></span>
+        </div>
+        <div class="social-media d-lg-none">
+          <ul class="social-media-list mx-auto me-3">
+            <li class="sm-item">
+              <a href=""><i data-feather="twitter"></i></a>
+            </li>
+            <li class="sm-item">
+              <a href=""><i data-feather="facebook"></i></a>
+            </li>
+            <li class="sm-item">
+              <a href=""><i data-feather="instagram"></i></a>
+            </li>
+            <li class="sm-item">
+              <a href=""><i data-feather="youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner -->
+  <section class="banner vh-100">
+    <div class="container mx-auto">
+      <div class="row py-5">
+        <div class="banner-fill col-lg-7 pt-3 ms-5">
+          <p class="fs-3 ms-4 mb-0">ONLINE FOOD DELIVERY</p>
+          <h1 class="text-dark">Don't Starve</h1>
+          <h1 class="font-shadow">Just Order</h1>
+          <button class="btn btn1">Order Now ></button>
+          <button class="btn btn2">Know More</button>
+        </div>
+        <div class="address mt-5 mx-auto">
+          <form class="d-flex justify-content-start my-auto">
+            <span class="address-icon "><i class="map-icon" data-feather="map-pin"></i></span>
+            <input class="address-input form-control" type="text" placeholder="Enter Your Address">
+            <button class="add-btn ms-auto" type="submit">Delivery</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end align-items-center position-fixed end-0">
+      <div class="social-media-side d-none d-lg-block align-items-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href=""><i class="sm-icon" data-feather="twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href=""><i class="sm-icon" data-feather="facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href=""><i class="sm-icon" data-feather="instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href=""><i class="sm-icon" data-feather="youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- end banner -->
+
+  <!-- category -->
+  <section class="category" id="product">
+    <div class="title text-center py-4">
+      <h2 class="position-relative d-inline-block fw-bold">Category</h2>
+    </div>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="cat col-lg-4">
+          <div class="card text-center">
+            <img src="img/food/kebabb.png" class="cat-img mx-auto">
+            <div class="card-body">
+              <a href="#" class="stretched-link">Fresh Made Meals</a>
+            </div>
+          </div>
+        </div>
+        <div class="cat col-lg-4">
+          <div class="card text-center">
+            <img src="img/snacks/doritos.png" class="cat-img mx-auto">
+            <div class="card-body">
+              <a href="#" class="stretched-link">Snacks</a>
+            </div>
+          </div>
+        </div>
+        <div class="cat col-lg-4">
+          <div class="card text-center">
+            <img src="img/drinks/tehbotol.png" class="cat-img mx-auto">
+            <div class="card-body">
+              <a href="#" class="stretched-link">Drinks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section class="product">
+    <div class="container py-5">
+      <div class="title text-center py-4">
+        <h2 class="position-relative d-inline-block fw-bold"><b class="text-primary">Atenifood </b>Indramayu Special!
+        </h2>
+      </div>
+      <div class="row row-cols-md-3 g-4 py-5">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="img/food/lengko.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NASI LENGKO</h5>
+              <p class="card-text fw-light">
+                Rasakan kelezatan autentik Nasi Lengko dari Indramayu! Paduan sempurna nasi putih, tahu, tempe, kacang
+                panjang, kol, mentimun, dan daun kucai disajikan dengan sambal kacang pedas yang menggoda.</p>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h3>Rp. 10.000</h3>
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="img/food/pedesanentog.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">PEDESAN ENTOG</h5>
+              <p class="card-text fw-light">Hadapi kepedasan yang membangkitkan selera dengan Pedesan Entog! Dibuat dari
+                daging
+                bebek atau entog, hidangan ini menyajikan kelezatan pedas yang menggoda dari cabai dan merica butiran.
+              </p>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h3>190$</h3>
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="img/food/Burbacek.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">BURBACEK</h5>
+              <p class="card-text fw-light">Bergabunglah dengan petualangan kuliner ke Indramayu melalui Burbacek!
+                Hidangan khas
+                ini memukau dengan perpaduan unik antara bubur lezat, rumbah (rebusan sayur), dan cecek (kikil kulit
+                sapi). </p>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h3>190$</h3>
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="title text-center mt-5">
+        <h2 class="position-relative d-inline-block fw-bold mb-5">About Us</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-5">
+          <img src="img/footer.jpg" class="about-img">
+        </div>
+        <div class="col-lg-7 pt-5">
+          <p class="text-dark fs-3 fw-light"><b class="text-primary fs-1 fw-bold">Selamat datang di Atenifood</b> -
+            tempatnya makanan,
+            minuman,
+            dan snack yang
+            memikat! Kami adalah
+            destinasi kuliner pilihan untuk mencari kelezatan yang tak tertandingi.</p>
+        </div>
+        <div class="col-lg-7 py-5 mt-5">
+          <p class="text-dark fs-3 fw-light">
+            Di Atenifood, kami memilih dengan hati-hati hidangan yang menggugah selera, menjamin hanya bahan-bahan segar
+            yang terbaik digunakan. Kami dengan antusias menyajikan hidangan lezat dari berbagai kategori, mulai dari
+            makanan lokal yang <b class="text-primary fs-2 fw-bold">autentik</b> hingga cita rasa internasional yang
+            menggiurkan.
+          </p>
+        </div>
+        <div class="col-lg-5 py-5">
+          <img src="img/drinks/drink.jpg" class="about-img2">
+        </div>
+
+      </div>
+      <div class="cat col-lg-4">
+        <div class="card text-center">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container py-5">
+      <div class="title text-center py-4">
+        <h2 class="position-relative d-inline-block fw-bold">Our Blog
+        </h2>
+      </div>
+      <div class="row row-cols-md-3 g-4 py-5">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="img/food/lengko.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NASI LENGKO</h5>
+              <p class="card-text fw-light">
+                Rasakan kelezatan autentik Nasi Lengko dari Indramayu! Paduan sempurna nasi putih, tahu, tempe, kacang
+                panjang, kol, mentimun, dan daun kucai disajikan dengan sambal kacang pedas yang menggoda.</p>
+              <a href="" class="btn btn-primary">Read More >></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="img/food/pedesanentog.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">PEDESAN ENTOG</h5>
+              <p class="card-text fw-light">Hadapi kepedasan yang membangkitkan selera dengan Pedesan Entog! Dibuat dari
+                daging
+                bebek atau entog, hidangan ini menyajikan kelezatan pedas yang menggoda dari cabai dan merica butiran.
+              </p>
+              <a href="" class="btn btn-primary">Read More >></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="img/food/Burbacek.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">BURBACEK</h5>
+              <p class="card-text fw-light">Bergabunglah dengan petualangan kuliner ke Indramayu melalui Burbacek!
+                Hidangan khas
+                ini memukau dengan perpaduan unik antara bubur lezat, rumbah (rebusan sayur), dan cecek (kikil kulit
+                sapi). </p>
+              <a href="" class="btn btn-primary">Read More >></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+
+  </section>
+
+
+
+
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    feather.replace()
+  </script>
+
+</body>
+
+</html>
