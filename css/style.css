@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+:root {
+  --primary: #007fff;
+  --secondary: #d7e0eb;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 
 /* Navbar */
@@ -16,14 +19,14 @@ body {
 
 
 .nav-item .nav-link:hover {
-  color: #007fff !important;
+  color: var(--primary) !important;
 }
 
 .search {
   width: 100%;
   margin-bottom: auto;
   height: 50px;
-  background-color: #d7e0eb;
+  background-color: var(--secondary);
   padding: 10px;
   border-radius: 80px;
 
@@ -37,7 +40,7 @@ body {
   font-size: 19px;
   font-weight: 300;
   color: black;
-  background-color: #d7e0eb;
+  background-color: var(--secondary);
   transition: width 0.4s linear;
 }
 
@@ -55,7 +58,7 @@ body {
 }
 
 .search-icon:hover {
-  color: #007fff !important;
+  color: var(--primary) !important;
 }
 
 .cart-icon {
@@ -69,7 +72,7 @@ body {
 }
 
 .login {
-  border-right: 1 px solid #e7ebed;
+  border-right: 1 px solid var(--secondary);
 }
 
 .login a {
@@ -82,8 +85,8 @@ body {
 .login-icon {
   width: 100%;
   padding: 5px;
-  color: #007fff;
-  border: solid 2px #007fff;
+  color: var(--primary);
+  border: solid 2px var(--primary);
   border-radius: 50%;
 }
 
@@ -98,7 +101,7 @@ body {
 
 
 .banner .container {
-  color: #007fff;
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -130,29 +133,29 @@ body {
 .banner .container .btn1 {
   border: none;
   outline: none;
-  background-color: #007fff;
+  background-color: var(--primary);
   color: #fff;
   font-weight: 400;
   border-radius: 60px;
 }
 
 .container .btn1:hover {
-  background-color: #d7e0eb;
-  color: #007fff;
-  border: 1px solid #007fff;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   font-size: 20px;
 }
 
 .banner .container .btn2 {
-  border: 4px solid #007fff;
+  border: 4px solid var(--primary);
   background-color: #fff;
-  color: #007fff;
+  color: var(--primary);
 
 }
 
 .container .btn2:hover {
-  border: 1px solid #007fff;
-  background-color: #d7e0eb;
+  border: 1px solid var(--primary);
+  background-color: var(--secondary);
   font-size: 20px;
 }
 
@@ -198,22 +201,22 @@ body {
   height: auto;
   border: none;
   outline: none;
-  background-color: #007fff;
+  background-color: var(--primary);
   color: #fff;
   border-radius: 60px;
 }
 
 .add-btn:hover {
-  border: 1px solid #007fff;
+  border: 1px solid var(--primary);
   background-color: #d7e0eb;
-  color: #007fff;
+  color: var(--primary);
 }
 
 .social-media-side {
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
   margin-top: -700px;
-  background-color: #007fff;
+  background-color: var(--primary);
 }
 
 .social-media-side ul {
@@ -227,12 +230,14 @@ body {
   padding: 4px;
   border-radius: 50%;
   border: none;
+
 }
 
 .sm-icon {
   width: 30px;
   height: 30px;
-  color: #007fff;
+  color: var(--primary);
+
 }
 
 .social-media-side ul li:hover {
@@ -272,7 +277,7 @@ section.category {
   width: 150px;
   height: 150px;
   border: none;
-  background-color: #d7e0eb;
+  background-color: var(--secondary);
   border-radius: 50%;
 
 }
@@ -282,7 +287,7 @@ section.category {
 }
 
 section.product {
-  background-color: #d7e0eb;
+  background-color: var(--secondary);
 }
 
 .product .card-img-top {
@@ -322,16 +327,60 @@ section.about p {
 }
 
 .about-img {
-  width: 520px;
+  width: 100%;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
 }
 
 .about-img2 {
-  width: 580px;
+  width: 180%;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
 }
+
+.blog .card {
+  text-align: justify;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.blog .card-body {
+  padding: 25px;
+  margin-top: -15px;
+}
+
+.blog .card-img-top {
+  height: 300px;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.blog .card {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.blog .card-body {
+  padding: 25px;
+  margin-top: -15px;
+}
+
+footer .brand {
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+
+footer a {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--pink) !important;
+}
+
+
 
 @media (max-width: 480px) {
   .banner {
@@ -388,7 +437,7 @@ section.about p {
     width: 120px;
     height: 120px;
     border: none;
-    background-color: #d7e0eb;
+    background-color: var(--secondary);
     border-radius: 50%;
 
   }
